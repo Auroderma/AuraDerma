@@ -291,17 +291,29 @@ button {
   gap: 12px;
 }
 
-.logo-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--accent-emerald), var(--accent-gold));
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: 0 4px 12px rgba(27, 77, 62, 0.2);
+.brand-logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 4px 12px rgba(194, 155, 56, 0.2);
+  flex-shrink: 0;
+}
+
+.brand-seal-mini {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.seal-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .logo-text {
@@ -1010,14 +1022,146 @@ button {
   justify-content: space-between;
 }
 
-.card-price {
-  font-size: 0.95rem;
-  font-weight: 700;
+.card-feature-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-emerald);
+  background-color: var(--accent-emerald-soft);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+}
+
+[data-theme="dark"] .card-feature-tag {
+  color: #74D2B6;
+}
+
+/* ==========================================================================
+   Doctor Feature Section (Dr. V. Khanna)
+   ========================================================================== */
+.doctor-feature-section {
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.doctor-feature-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.doctor-portrait-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-medium);
+}
+
+.doctor-full-photo {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.doctor-badge-overlay {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-medium);
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.doctor-seal-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-gold);
+}
+
+.doctor-badge-overlay strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.doctor-badge-overlay span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.doctor-credentials-sub {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin-top: -6px;
+  margin-bottom: 20px;
+}
+
+.lead-text {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.bio-text {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.expertise-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.exp-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-subtle);
+}
+
+.exp-badge i {
   color: var(--accent-emerald);
 }
 
-[data-theme="dark"] .card-price {
+[data-theme="dark"] .exp-badge i {
   color: var(--accent-gold);
+}
+
+.doctor-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 /* ==========================================================================
