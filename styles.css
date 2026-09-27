@@ -1727,8 +1727,8 @@ button {
 
 @media (min-width: 1024px) {
   .footer-container {
-    grid-template-columns: 1.4fr 0.9fr 0.9fr 1.2fr;
-    gap: 44px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 48px;
   }
 }
 
@@ -1736,7 +1736,25 @@ button {
   font-size: 0.85rem;
   color: #929E9B;
   line-height: 1.6;
-  margin: 14px 0 20px;
+  margin: 14px 0 16px;
+}
+
+.footer-contact-quick {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #CCD6D3;
+}
+
+.footer-contact-quick a {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+.footer-contact-quick i {
+  color: var(--accent-gold);
+  margin-right: 6px;
 }
 
 .footer-socials a {
