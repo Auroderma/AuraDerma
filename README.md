@@ -1,36 +1,27 @@
-# AuroDerma — Advanced Dermatology & Aesthetic Science Clinic
+# AuroDerma — Skin Body & Mind • Dr. V. Khanna
 
 [![Deploy AuroDerma Website to GitHub Pages](https://github.com/Auroderma/AuraDerma/actions/workflows/deploy.yml/badge.svg)](https://github.com/Auroderma/AuraDerma/actions/workflows/deploy.yml)
 [![GitHub Pages Live](https://img.shields.io/badge/Live%20Website-auroderma.github.io%2FAuraDerma-10B981?style=flat&logo=github)](https://auroderma.github.io/AuraDerma/)
 
-Official digital clinic experience for **AuroDerma**, an advanced clinical dermatology and aesthetic medicine centre.
+Official digital clinic experience for **AuroDerma — Skin Body & Mind**, founded and led by **Dr. V. Khanna**, Senior Consultant Dermatologist & Aesthetic Physician.
 
-🌐 **Live URL**: [https://auroderma.github.io/AuraDerma/](https://auroderma.github.io/AuraDerma/)
+🌐 **Live Website**: [https://auroderma.github.io/AuraDerma/](https://auroderma.github.io/AuraDerma/)
 
 ---
 
-## ✨ Features
+## ✨ Clinical Highlights
 
-- **Interactive Diagnostic Skin Quiz**: 3-step personalized clinical assessment generating instant physician-backed protocols.
-- **Specialized Treatment Explorer**: Filterable procedures across Medical Dermatology, Aesthetic Lasers, Bio-Stimulator Injectables, and Medical HydraFacial MD.
-- **Interactive Before & After Comparison Slider**: Interactive comparison revealing post-procedure clinical outcomes.
-- **Clinical Technology Suite**: Showcasing FDA-cleared Picosecond, Fractional CO₂, and contact cryo-cooling equipment.
-- **Medical Skincare Formula Spotlight**: Introducing the *AuroDerma Advanced Derma-Recovery Complex*.
-- **Direct Online Consultation Booking**: Interactive priority reservation modal and inline consultation booking.
-- **Dark / Light Luxury Mode**: Tailored ambient aesthetics with persistent theme toggle.
-- **Automated CI/CD**: Built-in GitHub Actions pipeline deploying to GitHub Pages on every push to `main`.
+- **Led Exclusively by Dr. V. Khanna**: Decades of clinical dermatology, laser surgery, and aesthetic cutaneous medicine.
+- **Holistic Care (Skin Body & Mind)**: Treating the root causes of skin concerns with evidence-based medical dermatology.
+- **Interactive Diagnostic Skin Quiz**: 3-step personalized clinical assessment generating physician-backed protocols.
+- **Specialized Clinical Treatments**: Medical dermatology, advanced picosecond & fractional laser resurfacing, sub-dermal biostimulation, and clinical HydraFacial MD (all charges/fees removed).
+- **Clinical Technology Suite**: FDA-cleared energy devices with sapphire cryo-cooling.
+- **Interactive Before & After Case Studies**: Documented patient outcomes under Dr. V. Khanna's supervision.
+- **Priority Consultation Scheduling**: Direct one-on-one booking with Dr. V. Khanna.
+- **Continuous Deployment**: Built-in GitHub Actions pipeline deploying to GitHub Pages on every push to `main`.
 
 ---
 
 ## 🚀 Continuous Deployment
 
 Every commit pushed to the `main` branch automatically triggers the `.github/workflows/deploy.yml` workflow, uploading the web artifacts and deploying directly to GitHub Pages.
-
----
-
-## 🛠️ Technology Stack
-
-- **HTML5**: Semantic, accessible markup with structured SEO metadata and Open Graph tags.
-- **Vanilla CSS3**: Tailored design tokens, responsive CSS grid/flexbox, glassmorphic effects, and micro-animations.
-- **Modern JavaScript**: Zero external runtime dependencies for maximum speed and smooth interactivity.
-- **GitHub Actions & Pages**: Automated continuous delivery.
