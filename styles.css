@@ -357,21 +357,12 @@ button {
 }
 
 .brand-sub {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   color: var(--accent-gold);
   font-weight: 700;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 200px;
-}
-
-@media (max-width: 380px) {
-  .brand-sub {
-    max-width: 140px;
-  }
 }
 
 .nav-menu {

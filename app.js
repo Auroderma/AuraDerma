@@ -144,40 +144,20 @@ function initSkinQuiz() {
 
     const resultTitle = document.getElementById('resultTitle');
     const resultSummary = document.getElementById('resultSummary');
-    const recProcedure = document.getElementById('recProcedure');
-    const recDowntime = document.getElementById('recDowntime');
-    const recRegimen = document.getElementById('recRegimen');
-    const recProtocol = document.getElementById('recProtocol');
 
-    // Tailored algorithm based on selections
+    // Tailored consultation guidance based on patient profile
     if (state.concern === 'Pigmentation') {
-      resultTitle.textContent = 'PicoSure® Melasma Shield & Cellular Clarifying Protocol';
-      resultSummary.textContent = `Optimized for ${state.skinType} skin. Combines ultra-short photon pulses with melanin dispersion to clear deep pigment without thermal irritation.`;
-      recProcedure.textContent = 'PicoSure Focused Array Laser + Tranexamic Infusion';
-      recDowntime.textContent = '0 - 12 Hours Mild Flush';
-      recRegimen.textContent = 'AuroDerma Niacinamide 10% & Barrier Lipid Shield';
-      recProtocol.textContent = '3 to 4 Sessions at 3-week intervals';
+      resultTitle.textContent = 'Pigmentation & Complexion Clarifying Profile';
+      resultSummary.textContent = `Optimized for ${state.skinType} skin. Dr. Vinod Khanna will evaluate depth of pigmentation and skin barrier health during your consultation to determine an evidence-backed, root-cause medical protocol.`;
     } else if (state.concern === 'Acne & Scars') {
-      resultTitle.textContent = 'Fractional CO2 Sub-Dermal Scar Elevation Protocol';
-      resultSummary.textContent = `Engineered for ${state.skinType} skin to dissolve fibrotic tethering and trigger intense dermal collagen remodeling.`;
-      recProcedure.textContent = 'AuroResurface™ Fractional CO2 + Subcision';
-      recDowntime.textContent = '3 - 5 Days Micro-Crusting (Normal)';
-      recRegimen.textContent = 'AuroDerma Advanced Derma-Recovery Complex';
-      recProtocol.textContent = '3 Sessions spaced 5 weeks apart';
+      resultTitle.textContent = 'Acne & Dermal Remodeling Clinical Profile';
+      resultSummary.textContent = `Engineered for ${state.skinType} skin. Dr. Vinod Khanna will personally inspect active inflammation, comedones, and scar depth to formulate a customized clinical treatment plan.`;
     } else if (state.concern === 'Anti-Aging') {
-      resultTitle.textContent = 'Sub-Dermal Biostimulation & Micro-Tox Hydrolift';
-      resultSummary.textContent = `A dual-vector regimen for ${state.skinType} complexion addressing dynamic wrinkle relaxation and extracellular matrix regeneration.`;
-      recProcedure.textContent = 'Profhilo® Hyaluronic Remodeling + Micro-Tox';
-      recDowntime.textContent = 'Immediate Return to Activities';
-      recRegimen.textContent = 'Copper Tripeptide-1 Cellular Recovery Elixir';
-      recProtocol.textContent = '2 Initial Sessions, 1 Annual Booster';
+      resultTitle.textContent = 'Skin Restoration & Vitality Consultation Profile';
+      resultSummary.textContent = `Designed for ${state.skinType} complexion. Focuses on cellular renewal, collagen integrity, and skin barrier resilience, to be discussed during your in-person evaluation.`;
     } else {
-      resultTitle.textContent = 'Vortex HydraFacial MD & Bio-Enzymatic Renewal';
-      resultSummary.textContent = `Formulated for ${state.skinType} dermis. Deep extraction of micro-comedones, infusion of medical humectants, and barrier stabilization.`;
-      recProcedure.textContent = 'AuroGlow™ Medical HydraFacial MD Protocol';
-      recDowntime.textContent = 'Zero Downtime (Immediate Luminescence)';
-      recRegimen.textContent = 'AuroDerma Multi-Weight Hyaluronic Acid Complex';
-      recProtocol.textContent = 'Monthly Maintenance Sessions';
+      resultTitle.textContent = 'Clinical Skin Health & Barrier Care Profile';
+      resultSummary.textContent = `Formulated for ${state.skinType} dermis. A personalized roadmap prioritizing medical-grade barrier stabilization and individualized dermatological care.`;
     }
   }
 
