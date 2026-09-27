@@ -1821,77 +1821,82 @@ button {
   background-color: var(--bg-card);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-lg);
-  padding: 24px 18px;
+  padding: 32px 20px;
   box-shadow: var(--shadow-md);
 }
 
 @media (min-width: 600px) {
   .contact-card {
-    padding: 36px;
+    padding: 44px 36px;
   }
+}
+
+.direct-call-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.call-badge-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--accent-emerald-soft);
+  color: var(--accent-emerald);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+[data-theme="dark"] .call-badge-icon {
+  color: #62DEBA;
 }
 
 .contact-card h3 {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
-  margin-bottom: 6px;
-}
-
-.contact-card p {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  margin-bottom: 22px;
-}
-
-.appointment-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
-
-@media (min-width: 600px) {
-  .form-row {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.form-group label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 12px 14px;
-  font-size: 16px; /* 16px prevents iOS zoom */
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
-  background-color: var(--bg-primary);
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 12px;
   color: var(--text-primary);
-  transition: border-color var(--transition);
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent-gold);
+.call-card-subtitle {
+  max-width: 460px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
 }
+
+.direct-call-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 36px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 18px rgba(27, 77, 62, 0.35);
+  text-decoration: none;
+  width: 100%;
+  max-width: 320px;
+}
+
+.call-hours-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+
 
 /* ==========================================================================
    Footer
@@ -2103,142 +2108,4 @@ button {
   text-align: center;
 }
 
-.booking-direct-call-box i {
-  color: var(--accent-gold);
-  font-size: 1rem;
-}
 
-.booking-direct-call-box a {
-  color: var(--accent-emerald);
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-[data-theme="dark"] .booking-direct-call-box a {
-  color: var(--accent-gold);
-}
-
-/* ==========================================================================
-   Modal Dialog
-   ========================================================================== */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--transition);
-  padding: 16px;
-}
-
-.modal-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-dialog {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-lg);
-  padding: 28px 20px;
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-  box-shadow: var(--shadow-lg);
-  max-height: 90vh;
-  overflow-y: auto;
-}
-
-@media (min-width: 600px) {
-  .modal-dialog {
-    padding: 36px;
-  }
-}
-
-.modal-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--bg-secondary);
-  color: var(--text-secondary);
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-header h3 {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  margin: 8px 0 4px;
-}
-
-.modal-header p {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin-bottom: 18px;
-}
-
-/* Toast */
-.toast-notification {
-  position: fixed;
-  bottom: 84px; /* Above mobile bottom bar */
-  left: 16px;
-  right: 16px;
-  margin: 0 auto;
-  background-color: var(--bg-card);
-  border: 1px solid var(--accent-emerald);
-  border-radius: var(--radius-md);
-  padding: 14px 18px;
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 3000;
-  transform: translateY(140%);
-  opacity: 0;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  max-width: 400px;
-}
-
-@media (min-width: 992px) {
-  .toast-notification {
-    bottom: 24px;
-    left: auto;
-    right: 24px;
-  }
-}
-
-.toast-notification.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.toast-icon {
-  font-size: 1.4rem;
-  color: #10B981;
-}
-
-.toast-body strong {
-  font-size: 0.88rem;
-  color: var(--text-primary);
-  display: block;
-}
-
-.toast-body span {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-}

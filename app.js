@@ -8,10 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initSkinQuiz();
   initTreatmentFilters();
-  initBeforeAfterSlider();
   initFaqAccordion();
-  initBookingModal();
-  initForms();
 });
 
 /* ==========================================================================
@@ -106,11 +103,10 @@ function initSkinQuiz() {
 
   const quizResult = document.getElementById('quizResult');
   const retakeBtn = document.getElementById('quizRetakeBtn');
-  const bookNowBtn = document.getElementById('quizBookNowBtn');
 
   // Option Click Handlers
   document.querySelectorAll('.quiz-option-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', () => {
       const step = parseInt(btn.dataset.step);
       const val = btn.dataset.val;
 
@@ -193,11 +189,6 @@ function initSkinQuiz() {
     if (quizResult) quizResult.style.display = 'none';
     goToStep(1);
   });
-
-  bookNowBtn?.addEventListener('click', () => {
-    const recText = document.getElementById('recProcedure')?.textContent || 'Prescribed Protocol';
-    openBookingModalWithTreatment(recText);
-  });
 }
 
 /* ==========================================================================
@@ -222,41 +213,10 @@ function initTreatmentFilters() {
       });
     });
   });
-
-  // Select Treatment Buttons inside cards
-  document.querySelectorAll('.select-treatment-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const treatment = btn.dataset.treatment;
-      openBookingModalWithTreatment(treatment);
-    });
-  });
 }
 
 /* ==========================================================================
-   5. Interactive Before & After Comparison Slider
-   ========================================================================== */
-function initBeforeAfterSlider() {
-  const range = document.getElementById('baRangeInput');
-  const afterLayer = document.getElementById('baAfterLayer');
-  const divider = document.getElementById('baDivider');
-
-  if (!range || !afterLayer || !divider) return;
-
-  function updateSlider(val) {
-    afterLayer.style.width = `${val}%`;
-    divider.style.left = `${val}%`;
-  }
-
-  range.addEventListener('input', (e) => {
-    updateSlider(e.target.value);
-  });
-
-  // Initial set
-  updateSlider(50);
-}
-
-/* ==========================================================================
-   6. FAQ Accordion
+   5. FAQ Accordion
    ========================================================================== */
 function initFaqAccordion() {
   const headers = document.querySelectorAll('.accordion-header');
@@ -289,128 +249,4 @@ function initFaqAccordion() {
       }
     });
   });
-}
-
-/* ==========================================================================
-   7. Booking Modal Logic
-   ========================================================================== */
-function initBookingModal() {
-  const modal = document.getElementById('bookingModal');
-  const closeBtn = document.getElementById('modalCloseBtn');
-  const openButtons = [
-    document.getElementById('openBookingBtn'),
-    document.getElementById('heroBookBtn'),
-    document.getElementById('consultDoctorBtn'),
-    document.getElementById('clinicBookBtn'),
-    document.getElementById('mobileBottomBookBtn')
-  ];
-
-  openButtons.forEach(btn => {
-    btn?.addEventListener('click', () => {
-      openBookingModal();
-    });
-  });
-
-  closeBtn?.addEventListener('click', closeBookingModal);
-
-  // Close when clicking backdrop
-  modal?.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeBookingModal();
-    }
-  });
-
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal?.classList.contains('active')) {
-      closeBookingModal();
-    }
-  });
-}
-
-function openBookingModal() {
-  const modal = document.getElementById('bookingModal');
-  modal?.classList.add('active');
-  modal?.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeBookingModal() {
-  const modal = document.getElementById('bookingModal');
-  modal?.classList.remove('active');
-  modal?.setAttribute('aria-hidden', 'true');
-  document.body.style.overflow = '';
-}
-
-function openBookingModalWithTreatment(treatmentName) {
-  openBookingModal();
-  const select = document.getElementById('mService');
-  if (select) {
-    let found = false;
-    for (let i = 0; i < select.options.length; i++) {
-      if (select.options[i].text.includes(treatmentName) || select.options[i].value.includes(treatmentName)) {
-        select.selectedIndex = i;
-        found = true;
-        break;
-      }
-    }
-    if (!found && treatmentName) {
-      const newOption = new Option(treatmentName, treatmentName, true, true);
-      select.add(newOption);
-    }
-  }
-}
-
-/* ==========================================================================
-   8. Form Submission Handlers & Toast Notifications
-   ========================================================================== */
-function initForms() {
-  // Inline Contact/Booking Form
-  const inlineForm = document.getElementById('inlineBookingForm');
-  inlineForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('formName')?.value || 'Guest';
-    const service = document.getElementById('formService')?.value || 'Consultation';
-
-    showToast(`Appointment Request Received!`, `Thank you ${name}. Our clinical coordinator will confirm your ${service} reservation.`);
-    inlineForm.reset();
-  });
-
-  // Modal Booking Form
-  const modalForm = document.getElementById('modalBookingForm');
-  modalForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('mName')?.value || 'Guest';
-    const service = document.getElementById('mService')?.value || 'Consultation';
-
-    closeBookingModal();
-    showToast(`Consultation Scheduled!`, `Thank you ${name}. A confirmation email with pre-care instructions has been queued for your ${service}.`);
-    modalForm.reset();
-  });
-
-  // Set default minimum date for date inputs to tomorrow
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const minDateStr = tomorrow.toISOString().split('T')[0];
-  const dateInputs = [document.getElementById('formDate'), document.getElementById('mDate')];
-  dateInputs.forEach(input => {
-    if (input) input.min = minDateStr;
-  });
-}
-
-function showToast(title, message) {
-  const toast = document.getElementById('toastNotification');
-  const toastTitle = document.getElementById('toastTitle');
-  const toastMessage = document.getElementById('toastMessage');
-
-  if (!toast) return;
-
-  if (toastTitle) toastTitle.textContent = title;
-  if (toastMessage) toastMessage.textContent = message;
-
-  toast.classList.add('show');
-
-  setTimeout(() => {
-    toast.classList.remove('show');
-  }, 5000);
 }
