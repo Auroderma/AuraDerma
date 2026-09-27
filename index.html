@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuroDerma | Advanced Dermatology & Aesthetic Science Clinic</title>
+  <meta name="description" content="AuroDerma is a premier clinical dermatology and aesthetic medicine centre. Evidence-based laser resurfacing, medical dermatology, anti-aging, and bespoke skincare.">
+  <meta name="keywords" content="AuroDerma, dermatology clinic, skin specialist, laser skin treatment, Botox, HydraFacial, acne scar treatment, aesthetic medicine">
+  <meta property="og:title" content="AuroDerma | Advanced Dermatology & Aesthetic Science">
+  <meta property="og:description" content="Precision clinical dermatology and medical aesthetics. Restore your skin's natural health and cellular radiance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/hero-banner.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Prata&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome / Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="mainHeader">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" id="logoLink">
+        <span class="logo-mark"><i class="fa-solid fa-sparkles"></i></span>
+        <div class="logo-text">
+          <span class="brand-name">AURODERMA</span>
+          <span class="brand-sub">Dermatology &amp; Aesthetics</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#treatments" class="nav-link" id="navTreatments">Treatments</a>
+        <a href="#skin-analyzer" class="nav-link" id="navAnalyzer">Skin Quiz</a>
+        <a href="#technology" class="nav-link" id="navTechnology">Clinical Tech</a>
+        <a href="#transformations" class="nav-link" id="navTransformations">Results</a>
+        <a href="#specialists" class="nav-link" id="navSpecialists">Specialists</a>
+        <a href="#faq" class="nav-link" id="navFaq">FAQ</a>
+        <a href="#contact" class="nav-link" id="navContact">Location</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-regular fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="btn btn-primary" id="openBookingBtn">
+          <i class="fa-regular fa-calendar-check"></i> Book Consultation
+        </button>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="pill-badge" id="heroPill">
+            <span class="pill-dot"></span> Certified Medical Dermatology &amp; Laser Sciences
+          </div>
+          <h1 class="hero-title" id="heroTitle">
+            Science-Driven Precision for <span class="text-gradient">Luminous, Healthy</span> Skin.
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to AuroDerma. Where clinical pathology meets high-performance aesthetic medicine. Bespoke dermatological protocols engineered for lasting cellular renewal.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-lg" id="heroBookBtn">
+              Schedule Your Consultation <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="#skin-analyzer" class="btn btn-glass btn-lg" id="heroQuizBtn">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> 2-Min Skin Quiz
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">15k+</span>
+              <span class="metric-label">Procedures Completed</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">99.4%</span>
+              <span class="metric-label">Patient Satisfaction</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Board-Certified MDs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-frame">
+            <img src="./assets/images/hero-banner.jpg" alt="AuroDerma Luxury Dermatology Clinic" class="hero-image" id="heroImage">
+            <div class="hero-floating-card floating-card-top">
+              <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="card-info">
+                <strong>FDA-Cleared Lasers</strong>
+                <span>PicoSure &amp; Fractional CO₂</span>
+              </div>
+            </div>
+            <div class="hero-floating-card floating-card-bottom">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="card-info">
+                <strong>5.0 Star Clinical Rating</strong>
+                <span>Top Ranked Aesthetic Clinic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Badges Strip -->
+    <section class="trust-strip">
+      <div class="container trust-container">
+        <div class="trust-item"><i class="fa-solid fa-certificate"></i> American Academy of Dermatology Certified</div>
+        <div class="trust-item"><i class="fa-solid fa-microscope"></i> Dermatopathologist Supervised</div>
+        <div class="trust-item"><i class="fa-solid fa-award"></i> Medical-Grade Hygiene Standards</div>
+        <div class="trust-item"><i class="fa-solid fa-fingerprint"></i> Individualized Cellular Formulations</div>
+      </div>
+    </section>
+
+    <!-- Interactive Skin Consultation Quiz -->
+    <section class="section skin-analyzer-section" id="skin-analyzer">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Interactive Diagnostic Tool</span>
+          <h2 class="section-title">Personalized Skin Protocol Builder</h2>
+          <p class="section-desc">Answer 3 clinical assessment questions to receive an instant physician-backed treatment recommendation tailored to your dermis.</p>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+          <!-- Step Indicators -->
+          <div class="quiz-stepper">
+            <div class="step-indicator active" id="stepIndicator1">
+              <span class="step-num">1</span>
+              <span class="step-text">Skin Type</span>
+            </div>
+            <div class="step-line" id="stepLine1"></div>
+            <div class="step-indicator" id="stepIndicator2">
+              <span class="step-num">2</span>
+              <span class="step-text">Primary Concern</span>
+            </div>
+            <div class="step-line" id="stepLine2"></div>
+            <div class="step-indicator" id="stepIndicator3">
+              <span class="step-num">3</span>
+              <span class="step-text">Aesthetic Goal</span>
+            </div>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="quiz-step active" id="quizStep1">
+            <h3 class="step-question">How does your skin feel 2 hours after washing?</h3>
+            <div class="options-grid">
+              <button class="quiz-option-btn" data-step="1" data-val="Oily">
+                <i class="fa-solid fa-droplet"></i>
+                <strong>Oily / Prone to Shine</strong>
+                <span>Excess sebum across T-zone &amp; cheeks</span>
+              </button>
+              <button class="quiz-option-btn" data-step="1" data-val="Dry">
+                <i class="fa-solid fa-sun"></i>
+                <strong>Dry &amp; Dehydrated</strong>
+                <span>Tight feeling, flaking, or rough patches</span>
+              </button>
+              <button class="quiz-option-btn" data-step="1" data-val="Combination">
+                <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                <strong>Combination</strong>
+                <span>Oily T-zone, normal to dry perimeter</span>
+              </button>
+              <button class="quiz-option-btn" data-step="1" data-val="Sensitive">
+                <i class="fa-solid fa-shield-heart"></i>
+                <strong>Sensitive / Reactive</strong>
+                <span>Prone to erythema, stinging, or flush</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" id="quizStep2">
+            <h3 class="step-question">What is your primary dermatological concern?</h3>
+            <div class="options-grid">
+              <button class="quiz-option-btn" data-step="2" data-val="Acne & Scars">
+                <i class="fa-solid fa-volcano"></i>
+                <strong>Acne &amp; Post-Acne Scarring</strong>
+                <span>Blemishes, texture pits, post-inflammatory marks</span>
+              </button>
+              <button class="quiz-option-btn" data-step="2" data-val="Pigmentation">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <strong>Melasma &amp; Pigmentation</strong>
+                <span>Dark spots, sun damage, uneven skin tone</span>
+              </button>
+              <button class="quiz-option-btn" data-step="2" data-val="Anti-Aging">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <strong>Fine Lines &amp; Elasticity Loss</strong>
+                <span>Crow's feet, nasolabial folds, sagging contour</span>
+              </button>
+              <button class="quiz-option-btn" data-step="2" data-val="Dullness">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <strong>Dull Texture &amp; Congestion</strong>
+                <span>Enlarged pores, lack of radiance, dead cell buildup</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="quiz-step" id="quizStep3">
+            <h3 class="step-question">What is your preferred treatment intervention?</h3>
+            <div class="options-grid">
+              <button class="quiz-option-btn" data-step="3" data-val="Non-Invasive Laser">
+                <i class="fa-solid fa-bolt"></i>
+                <strong>High-Tech Medical Laser</strong>
+                <span>Targeted photon energy with minimal to no downtime</span>
+              </button>
+              <button class="quiz-option-btn" data-step="3" data-val="Clinical Hydration">
+                <i class="fa-solid fa-water"></i>
+                <strong>Clinical Infusion &amp; HydraFacial</strong>
+                <span>Deep vortex extraction &amp; antioxidant infusion</span>
+              </button>
+              <button class="quiz-option-btn" data-step="3" data-val="Aesthetic Injectables">
+                <i class="fa-solid fa-syringe"></i>
+                <strong>Neuromodulators &amp; Biostimulators</strong>
+                <span>Instant volume restoration &amp; wrinkle smoothing</span>
+              </button>
+              <button class="quiz-option-btn" data-step="3" data-val="Medical Chemical Peel">
+                <i class="fa-solid fa-flask"></i>
+                <strong>Medical Peels &amp; Cell Resurfacing</strong>
+                <span>Prescription acid peeling for total renewal</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Result Card -->
+          <div class="quiz-result" id="quizResult" style="display: none;">
+            <div class="result-header">
+              <div class="result-badge"><i class="fa-solid fa-clipboard-check"></i> Customized Clinical Protocol</div>
+              <h3 id="resultTitle">Pico-Laser Resurfacing &amp; Bio-Barrier Therapy</h3>
+              <p id="resultSummary">Specially designed for your profile to target deep cellular rejuvenation, repair texture, and stimulate natural neocollagenesis.</p>
+            </div>
+
+            <div class="result-breakdown">
+              <div class="result-card">
+                <div class="res-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                <div class="res-details">
+                  <strong>Recommended Procedure</strong>
+                  <span id="recProcedure">AuroDerma PicoGlow Multi-Depth Laser</span>
+                </div>
+              </div>
+              <div class="result-card">
+                <div class="res-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="res-details">
+                  <strong>Expected Downtime</strong>
+                  <span id="recDowntime">None to 24 Hours Mild Erythema</span>
+                </div>
+              </div>
+              <div class="result-card">
+                <div class="res-icon"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+                <div class="res-details">
+                  <strong>At-Home Medical Regimen</strong>
+                  <span id="recRegimen">AuroDerma Advanced Derma-Recovery Complex</span>
+                </div>
+              </div>
+              <div class="result-card">
+                <div class="res-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                <div class="res-details">
+                  <strong>Recommended Protocol</strong>
+                  <span id="recProtocol">3 Sessions spaced 4 weeks apart</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-actions">
+              <button class="btn btn-primary btn-lg" id="quizBookNowBtn">
+                <i class="fa-regular fa-calendar-check"></i> Book This Prescribed Protocol
+              </button>
+              <button class="btn btn-secondary" id="quizRetakeBtn">
+                <i class="fa-solid fa-rotate-left"></i> Retake Assessment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treatments & Services -->
+    <section class="section treatments-section" id="treatments">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Clinical Procedures</span>
+          <h2 class="section-title">Specialized Dermatological Treatments</h2>
+          <p class="section-desc">Every treatment at AuroDerma is performed or directly supervised by certified dermatologists utilizing medical-grade instrumentation.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="treatment-tabs">
+          <button class="tab-btn active" data-filter="all">All Specialties</button>
+          <button class="tab-btn" data-filter="laser">Aesthetic Lasers</button>
+          <button class="tab-btn" data-filter="injectables">Anti-Aging &amp; Injectables</button>
+          <button class="tab-btn" data-filter="medical">Medical Dermatology</button>
+          <button class="tab-btn" data-filter="peels">Clinical Peels &amp; HydraFacial</button>
+        </div>
+
+        <!-- Treatment Grid -->
+        <div class="treatment-grid" id="treatmentGrid">
+          <!-- Card 1 -->
+          <div class="treatment-card" data-category="laser">
+            <div class="card-badge">Laser Specialty</div>
+            <div class="card-header-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <h3 class="card-title">PicoSure® Melasma &amp; Pigment Clear</h3>
+            <p class="card-desc">Ultrashort picosecond pulses shatter epidermal and dermal melanin without thermal trauma. Ideal for stubborn melasma, sun freckles, and dark spots.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 45 mins</span>
+              <span><i class="fa-solid fa-user-doctor"></i> Zero Downtime</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">From $280 / session</span>
+              <button class="btn btn-sm btn-outline select-treatment-btn" data-treatment="PicoSure Melasma & Pigment Clear">Select</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="treatment-card" data-category="laser">
+            <div class="card-badge">Fractional CO2</div>
+            <div class="card-header-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3 class="card-title">AuroResurface™ Deep Scar Revision</h3>
+            <p class="card-desc">Advanced micro-ablative fractional carbon dioxide laser precisely breaks down rigid fibrotic acne scar tissue while stimulating profound new collagen.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 60 mins</span>
+              <span><i class="fa-solid fa-user-doctor"></i> 3-5 Days Healing</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">From $450 / session</span>
+              <button class="btn btn-sm btn-outline select-treatment-btn" data-treatment="AuroResurface Deep Scar Revision">Select</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="treatment-card" data-category="injectables">
+            <div class="card-badge">Neuromodulators</div>
+            <div class="card-header-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+            <h3 class="card-title">Natural Micro-Tox &amp; Wrinkle Relaxing</h3>
+            <p class="card-desc">Micro-dosed botulinum neuromodulators administered with microscopic needles to preserve expressive warmth while smoothing forehead lines and crow's feet.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 30 mins</span>
+              <span><i class="fa-solid fa-user-doctor"></i> Instant Return to Work</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">From $320 / area</span>
+              <button class="btn btn-sm btn-outline select-treatment-btn" data-treatment="Natural Micro-Tox & Wrinkle Relaxing">Select</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="treatment-card" data-category="injectables">
+            <div class="card-badge">Bio-Remodeling</div>
+            <div class="card-header-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3 class="card-title">Profhilo® Sub-Dermal Hyaluronic Hydrolift</h3>
+            <p class="card-desc">Ultra-pure bio-compatible hyaluronic acid that spreads smoothly across the subcutaneous layer to stimulate elastin and rejuvenate crepey skin.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 40 mins</span>
+              <span><i class="fa-solid fa-user-doctor"></i> Minimal 24h Pips</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">From $600 / protocol</span>
+              <button class="btn btn-sm btn-outline select-treatment-btn" data-treatment="Profhilo Sub-Dermal Hyaluronic Hydrolift">Select</button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="treatment-card" data-category="peels">
+            <div class="card-badge">Medical HydraFacial</div>
+            <div class="card-header-icon"><i class="fa-solid fa-water"></i></div>
+            <h3 class="card-title">AuroGlow™ Medical HydraFacial MD</h3>
+            <p class="card-desc">Patented 4-stage vortex technology exfoliates dead stratum corneum, vacuums congested pores, and infuses clinical hyaluronic acid, antioxidants and peptides.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 50 mins</span>
+              <span><i class="fa-solid fa-user-doctor"></i> Immediate Glow</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">From $195 / session</span>
+              <button class="btn btn-sm btn-outline select-treatment-btn" data-treatment="AuroGlow Medical HydraFacial MD">Select</button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="treatment-card" data-category="medical">
+            <div class="card-badge">Clinical Dermatology</div>
+            <div class="card-header-icon"><i class="fa-solid fa-notes-medical"></i></div>
+            <h3 class="card-title">Acne, Rosacea &amp; Dermatitis Management</h3>
+            <p class="card-desc">Thorough diagnostic evaluation, sebum analysis, prescription topical/oral therapy, and phototherapy protocol for active inflammatory dermatoses.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 45 mins</span>
+              <span><i class="fa-solid fa-user-doctor"></i> Comprehensive MD Plan</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">From $150 / consult</span>
+              <button class="btn btn-sm btn-outline select-treatment-btn" data-treatment="Acne, Rosacea & Dermatitis Management">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical Tech & Suite Section -->
+    <section class="section tech-section" id="technology">
+      <div class="container tech-container">
+        <div class="tech-image-col">
+          <div class="tech-image-wrapper">
+            <img src="./assets/images/laser-tech.jpg" alt="AuroDerma Advanced Clinical Laser Room" class="tech-img" id="techImage">
+            <div class="tech-badge">
+              <i class="fa-solid fa-shield-virus"></i> ISO 9001 Hospital Grade Sterility
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-content-col">
+          <span class="section-tag">Clinical Equipment</span>
+          <h2 class="section-title">Gold-Standard Laser &amp; Diagnostic Technology</h2>
+          <p class="section-desc">We never compromise on medical precision. AuroDerma invests in tier-one, FDA-cleared devices equipped with integrated real-time epidermal cooling for peak safety.</p>
+
+          <div class="tech-features">
+            <div class="tech-feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div class="feat-text">
+                <h4>Contact Sapphire Cryo-Cooling</h4>
+                <p>Protects surface layers of the skin during energy delivery, ensuring maximal comfort and eliminating hyperpigmentation risks.</p>
+              </div>
+            </div>
+
+            <div class="tech-feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div class="feat-text">
+                <h4>Multi-Spectral Digital Dermatoscope</h4>
+                <p>High-resolution polarized optical imaging detects sub-surface melanin distribution, vascular redness, and dermal collagen density.</p>
+              </div>
+            </div>
+
+            <div class="tech-feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="feat-text">
+                <h4>Dynamic Pulse Width Modulation</h4>
+                <p>Delivers energy in picoseconds or nanoseconds depending on your Fitzpatrick skin type and target depth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinical Skincare Formula Spotlight -->
+    <section class="section product-spotlight-section">
+      <div class="container spotlight-container">
+        <div class="spotlight-content">
+          <span class="section-tag">Proprietary Formulation</span>
+          <h2 class="section-title">AuroDerma Advanced Derma-Recovery Complex</h2>
+          <p class="section-desc">Developed by our in-house dermatopathologists. A medical-grade post-procedure elixir that accelerates epithelial cell restoration by 64% while reinforcing the cutaneous lipid barrier.</p>
+
+          <div class="ingredient-pills">
+            <span class="ing-pill"><i class="fa-solid fa-check"></i> 10% Niacinamide PC</span>
+            <span class="ing-pill"><i class="fa-solid fa-check"></i> Multi-Weight Hyaluronic</span>
+            <span class="ing-pill"><i class="fa-solid fa-check"></i> Centella Asiatica (Madecassoside)</span>
+            <span class="ing-pill"><i class="fa-solid fa-check"></i> Copper Tripeptide-1</span>
+          </div>
+
+          <div class="spotlight-cta">
+            <button class="btn btn-primary" id="spotlightOrderBtn">
+              <i class="fa-solid fa-prescription-bottle"></i> Inquire Medical Skincare
+            </button>
+            <span class="exclusive-tag"><i class="fa-solid fa-lock"></i> Exclusively Dispensed in Clinic</span>
+          </div>
+        </div>
+
+        <div class="spotlight-visual">
+          <img src="./assets/images/clinical-formula.jpg" alt="AuroDerma Medical Skincare Serum" class="formula-img" id="formulaImage">
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Before & After Visual Slider -->
+    <section class="section comparison-section" id="transformations">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Clinical Outcomes</span>
+          <h2 class="section-title">Documented Transformations</h2>
+          <p class="section-desc">Slide to see real patient results achieved using our structured laser and medical dermatology protocols.</p>
+        </div>
+
+        <div class="comparison-card-wrapper">
+          <div class="comparison-info">
+            <h3>Case Study #408: Deep Cystic Acne Scars &amp; Hyperpigmentation</h3>
+            <p><strong>Protocol:</strong> 3 Sessions AuroResurface™ Fractional CO2 + AuroDerma Derma-Recovery Serum</p>
+            <p><strong>Timeline:</strong> 12 Weeks Post-Procedure | Supervised by Dr. Elena Vance</p>
+          </div>
+
+          <!-- Interactive Before/After Visual Element -->
+          <div class="ba-slider-container" id="baSliderContainer">
+            <div class="ba-image-before">
+              <div class="ba-tag before-tag">Before: Week 0</div>
+              <div class="simulated-skin skin-before">
+                <div class="skin-overlay">
+                  <div class="scar-blemish" style="top:30%; left:35%;"></div>
+                  <div class="scar-blemish" style="top:42%; left:48%;"></div>
+                  <div class="scar-blemish" style="top:55%; left:30%;"></div>
+                  <div class="scar-blemish" style="top:62%; left:45%;"></div>
+                  <div class="redness-wash"></div>
+                </div>
+                <div class="skin-caption">Severe Erythema &amp; Atrophic Pitting</div>
+              </div>
+            </div>
+
+            <div class="ba-image-after" id="baAfterLayer">
+              <div class="ba-tag after-tag">After: Week 12</div>
+              <div class="simulated-skin skin-after">
+                <div class="skin-overlay smooth-radiance">
+                  <div class="radiant-glow"></div>
+                </div>
+                <div class="skin-caption">92% Scar Elevation &amp; Clear Tone</div>
+              </div>
+            </div>
+
+            <!-- Slider Handle -->
+            <input type="range" min="0" max="100" value="50" class="ba-range-slider" id="baRangeInput" aria-label="Compare Before and After">
+            <div class="ba-divider-line" id="baDivider">
+              <div class="ba-handle">
+                <i class="fa-solid fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="slider-hint"><i class="fa-solid fa-hand-pointer"></i> Drag slider left or right to compare</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical Specialists -->
+    <section class="section specialists-section" id="specialists">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Our Faculty</span>
+          <h2 class="section-title">Led By Board-Certified Dermatologists</h2>
+          <p class="section-desc">Your skin deserves specialist medical insight. Meet our leading physicians and laser surgeons.</p>
+        </div>
+
+        <div class="specialists-grid">
+          <div class="doctor-card">
+            <div class="doctor-avatar">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="doctor-body">
+              <span class="doctor-role">Medical Director</span>
+              <h3 class="doctor-name">Dr. Elena Vance, MD, FAAD</h3>
+              <p class="doctor-bio">Harvard Medical School alumnus with 16+ years specializing in advanced cutaneous laser resurfacing, pigment disorders, and facial micro-anatomy.</p>
+              <div class="doctor-tags">
+                <span>Laser Surgery</span>
+                <span>Melasma</span>
+                <span>Clinical Trials</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card">
+            <div class="doctor-avatar">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="doctor-body">
+              <span class="doctor-role">Aesthetic Dermatologist</span>
+              <h3 class="doctor-name">Dr. Marcus Chen, MD</h3>
+              <p class="doctor-bio">Pioneer in non-surgical facial re-contouring, full-face biostimulators, and micro-focused ultrasound tightening with natural, subtle elegance.</p>
+              <div class="doctor-tags">
+                <span>Profhilo</span>
+                <span>Micro-Tox</span>
+                <span>Facial Symmetry</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card">
+            <div class="doctor-avatar">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="doctor-body">
+              <span class="doctor-role">Clinical Cosmetologist</span>
+              <h3 class="doctor-name">Dr. Priya Sharma, MD</h3>
+              <p class="doctor-bio">Specialist in cutaneous barrier repair, treatment of adult rosacea, cystic acne remission, and formulation of personalized topical pharmacotherapy.</p>
+              <div class="doctor-tags">
+                <span>Acne Remission</span>
+                <span>HydraFacial MD</span>
+                <span>Barrier Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Patient Reviews -->
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Patient Testimonials</span>
+          <h2 class="section-title">Words from Our Patients</h2>
+          <p class="section-desc">Over 1,200+ 5-star ratings across clinical dermatology, laser treatments, and patient care.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"I struggled with stubborn melasma for 6 years. Dr. Elena's PicoSure protocol completely cleared my cheeks within three sessions. The attention to skin safety was reassuring."</p>
+            <div class="reviewer">
+              <strong>Sophia L.</strong>
+              <span>PicoSure Laser Patient</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"The HydraFacial MD and the AuroDerma recovery serum are magical. My texture is smoother, pores are noticeably tighter, and there was zero downtime before my wedding."</p>
+            <div class="reviewer">
+              <strong>Alexander K.</strong>
+              <span>AuroGlow™ HydraFacial</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Dr. Marcus Chen gave me the most natural anti-wrinkle treatment I've ever had. No stiffness at all, just refreshed and well-rested skin. Truly world-class dermatology."</p>
+            <div class="reviewer">
+              <strong>Genevieve M.</strong>
+              <span>Micro-Tox &amp; Hydrolift</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="section-tag">Common Inquiries</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Have questions about clinical appointments, downtime, or procedure pricing?</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What should I expect during my initial dermatologist consultation?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Your 45-minute consultation includes a multi-spectral dermatoscope skin analysis, microscopic barrier assessment, complete medical history evaluation, and an individualized roadmap crafted specifically for your skin concerns.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Are aesthetic laser treatments safe for darker skin types (Fitzpatrick IV-VI)?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes. We utilize specialized wavelengths (including 1064nm Nd:YAG and ultrashort picosecond modes) paired with sapphire cryo-cooling that bypass epidermal melanin to prevent post-inflammatory hyperpigmentation.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How soon can I return to work or exercise after treatments?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>For HydraFacial MD and PicoGlow, there is zero downtime—you can return to work immediately. For Fractional CO2 laser, we recommend 48 to 72 hours of gentle healing and avoiding strenuous workouts or direct UV radiation.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Do I need a physician referral to book an appointment?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>No referral is required. Both medical dermatology consultations and aesthetic procedures can be scheduled directly online or by calling our clinic desk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Booking -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <span class="section-tag">Direct Access</span>
+          <h2 class="section-title">Visit AuroDerma Clinic</h2>
+          <p class="section-desc">Centrally located with private parking, dedicated sterile treatment rooms, and concierge patient care.</p>
+
+          <div class="contact-details">
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Clinic Address</strong>
+                <p>AuroDerma Medical Centre, Suite 400<br>Healthcare Boulevard, Suite A</p>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Direct Phone / WhatsApp</strong>
+                <p>+1 (800) 555-DERMA / +1 (800) 555-3376</p>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Physician Inquiries</strong>
+                <p>care@auroderma.com</p>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Clinical Operating Hours</strong>
+                <p>Mon - Fri: 8:00 AM – 7:00 PM<br>Sat: 9:00 AM – 4:00 PM | Sun: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Request Priority Appointment</h3>
+          <p>Complete this form to reserve your one-on-one session with our certified medical team.</p>
+          
+          <form id="inlineBookingForm" class="appointment-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Full Name *</label>
+                <input type="text" id="formName" required placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="formPhone">Phone Number *</label>
+                <input type="tel" id="formPhone" required placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formEmail">Email Address *</label>
+                <input type="email" id="formEmail" required placeholder="jane@example.com">
+              </div>
+              <div class="form-group">
+                <label for="formService">Desired Treatment *</label>
+                <select id="formService" required>
+                  <option value="">Select a procedure...</option>
+                  <option value="Initial Dermatologist Consultation">Initial Dermatologist Consultation</option>
+                  <option value="PicoSure Melasma & Pigment Clear">PicoSure Melasma & Pigment Clear</option>
+                  <option value="AuroResurface Fractional CO2">AuroResurface Fractional CO2</option>
+                  <option value="Natural Micro-Tox & Wrinkle Relaxing">Natural Micro-Tox & Wrinkle Relaxing</option>
+                  <option value="Profhilo Sub-Dermal Hydrolift">Profhilo Sub-Dermal Hydrolift</option>
+                  <option value="AuroGlow Medical HydraFacial MD">AuroGlow Medical HydraFacial MD</option>
+                  <option value="Medical Acne / Rosacea Assessment">Medical Acne / Rosacea Assessment</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formDoctor">Preferred Specialist</label>
+                <select id="formDoctor">
+                  <option value="First Available Board-Certified MD">First Available Board-Certified MD</option>
+                  <option value="Dr. Elena Vance, MD, FAAD">Dr. Elena Vance, MD, FAAD</option>
+                  <option value="Dr. Marcus Chen, MD">Dr. Marcus Chen, MD</option>
+                  <option value="Dr. Priya Sharma, MD">Dr. Priya Sharma, MD</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="formDate">Preferred Date</label>
+                <input type="date" id="formDate">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formNotes">Briefly describe your skin history or questions</label>
+              <textarea id="formNotes" rows="3" placeholder="Tell us about previous treatments or specific concerns..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitFormBtn">
+              Confirm Consultation Request <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-mark"><i class="fa-solid fa-sparkles"></i></span>
+          <div class="logo-text">
+            <span class="brand-name">AURODERMA</span>
+            <span class="brand-sub">Dermatology &amp; Aesthetics</span>
+          </div>
+        </a>
+        <p class="footer-about">Precision dermatology, evidence-based skin therapies, and aesthetic laser rejuvenation under board-certified medical leadership.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Auroderma" target="_blank" rel="noopener" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <ul>
+          <li><a href="#treatments">PicoSure® Laser</a></li>
+          <li><a href="#treatments">Fractional CO2 Resurfacing</a></li>
+          <li><a href="#treatments">Profhilo® Hydrolift</a></li>
+          <li><a href="#treatments">Micro-Tox Wrinkle Smoothing</a></li>
+          <li><a href="#treatments">HydraFacial MD Protocol</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Clinical Care</h4>
+        <ul>
+          <li><a href="#skin-analyzer">Interactive Skin Quiz</a></li>
+          <li><a href="#specialists">Board-Certified Specialists</a></li>
+          <li><a href="#technology">Sterility &amp; Lasers</a></li>
+          <li><a href="#transformations">Clinical Case Studies</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>AuroDerma Live Domain</h4>
+        <div class="domain-card">
+          <span class="live-dot"></span> <strong>GitHub Pages Live:</strong>
+          <a href="https://auroderma.github.io/AuraDerma/" class="domain-link" target="_blank" rel="noopener">auroderma.github.io/AuraDerma</a>
+        </div>
+        <p class="live-note">Continuous deployment powered by GitHub Actions on every push to <code>main</code>.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 AuroDerma Dermatology &amp; Aesthetic Medicine. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">HIPAA Compliance</a>
+          <a href="#">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="pill-badge"><i class="fa-regular fa-calendar-check"></i> Online Scheduling</span>
+        <h3 id="modalTitle">Book Your Dermatological Consultation</h3>
+        <p>Select your preferred treatment and specialist. We will confirm your slot within 2 hours.</p>
+      </div>
+      
+      <form id="modalBookingForm" class="appointment-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="mName">Full Name *</label>
+            <input type="text" id="mName" required placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label for="mPhone">Phone *</label>
+            <input type="tel" id="mPhone" required placeholder="+1 (555) 123-4567">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="mEmail">Email *</label>
+            <input type="email" id="mEmail" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="mService">Procedure *</label>
+            <select id="mService" required>
+              <option value="Initial Dermatologist Consultation">Initial Dermatologist Consultation</option>
+              <option value="PicoSure Melasma & Pigment Clear">PicoSure Melasma & Pigment Clear</option>
+              <option value="AuroResurface Fractional CO2">AuroResurface Fractional CO2</option>
+              <option value="Natural Micro-Tox & Wrinkle Relaxing">Natural Micro-Tox & Wrinkle Relaxing</option>
+              <option value="Profhilo Sub-Dermal Hydrolift">Profhilo Sub-Dermal Hydrolift</option>
+              <option value="AuroGlow Medical HydraFacial MD">AuroGlow Medical HydraFacial MD</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="mDate">Date</label>
+            <input type="date" id="mDate">
+          </div>
+          <div class="form-group">
+            <label for="mTime">Preferred Time Slot</label>
+            <select id="mTime">
+              <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+              <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
+              <option value="Late Afternoon (4:00 PM - 6:30 PM)">Late Afternoon (4:00 PM - 6:30 PM)</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" id="modalSubmitBtn">
+          Reserve Consultation Slot
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-body">
+      <strong id="toastTitle">Appointment Reserved!</strong>
+      <span id="toastMessage">We've received your request and our clinic concierge will reach out promptly.</span>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
