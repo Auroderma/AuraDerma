@@ -300,7 +300,9 @@ function initBookingModal() {
   const openButtons = [
     document.getElementById('openBookingBtn'),
     document.getElementById('heroBookBtn'),
-    document.getElementById('consultDoctorBtn')
+    document.getElementById('consultDoctorBtn'),
+    document.getElementById('clinicBookBtn'),
+    document.getElementById('mobileBottomBookBtn')
   ];
 
   openButtons.forEach(btn => {
