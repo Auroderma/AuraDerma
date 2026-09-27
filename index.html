@@ -221,12 +221,9 @@
           </div>
 
           <div class="clinic-actions">
-            <button class="btn btn-primary" id="clinicBookBtn">
-              <i class="fa-regular fa-calendar-check"></i> Book Visit at Delhi Clinic
+            <button class="btn btn-primary btn-lg" id="clinicBookBtn">
+              <i class="fa-regular fa-calendar-check"></i> Book Appointment with Dr. Vinod Khanna
             </button>
-            <a href="tel:+919999212800" class="btn btn-outline" id="callClinicBtn">
-              <i class="fa-solid fa-phone"></i> Call 9999212800
-            </a>
           </div>
         </div>
       </div>
@@ -690,51 +687,7 @@
       </div>
     </section>
 
-    <!-- Patient Reviews -->
-    <section class="section reviews-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Patient Trust</span>
-          <h2 class="section-title">What Patients Say About Dr. Vinod Khanna</h2>
-          <p class="section-desc">Over 1,56,000 patients treated across Delhi and nationwide.</p>
-        </div>
 
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text">"I suffered from persistent fungal infection for nearly two years. Dr. Vinod Khanna gave me the exact course and it completely resolved. He is truly a godsend."</p>
-            <div class="reviewer">
-              <strong>Rajesh Sharma</strong>
-              <span>Delhi • Antifungal Patient</span>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text">"Dr. Khanna does not push unnecessary procedures. His diagnosis is precise, the clinic in Delhi is calm, and his staff is very helpful."</p>
-            <div class="reviewer">
-              <strong>Pooja Mehra</strong>
-              <span>Delhi • Skin Specialist Patient</span>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text">"After visiting multiple doctors in Delhi for stubborn pigmentation, Dr. Vinod Khanna's protocol cleared my face within 2 months. Best dermatologist!"</p>
-            <div class="reviewer">
-              <strong>Amit Verma</strong>
-              <span>Delhi • Melasma Care</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- FAQ Accordion -->
     <section class="section faq-section" id="faq">
@@ -825,6 +778,12 @@
         <div class="contact-card">
           <h3>Book Appointment with Dr. Vinod Khanna</h3>
           <p>Fill in your details below to schedule your consultation at AuroDerma Delhi.</p>
+
+          <!-- Direct Call Line inside Book Appointment -->
+          <div class="booking-direct-call-box">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Prefer to schedule directly over the phone? <a href="tel:+919999212800">Call <strong>+91 99992 12800</strong></a></span>
+          </div>
           
           <form id="inlineBookingForm" class="appointment-form">
             <div class="form-row">
@@ -940,10 +899,7 @@
 
   <!-- Sticky Bottom Mobile Action Bar (for 99% Mobile Visitors) -->
   <div class="mobile-bottom-bar" id="mobileBottomBar">
-    <a href="tel:+919999212800" class="m-bar-btn m-bar-call" aria-label="Call Clinic">
-      <i class="fa-solid fa-phone"></i> <span>Call 9999212800</span>
-    </a>
-    <button class="m-bar-btn m-bar-book" id="mobileBottomBookBtn">
+    <button class="m-bar-btn m-bar-book-full" id="mobileBottomBookBtn">
       <i class="fa-regular fa-calendar-check"></i> <span>Book Appointment</span>
     </button>
   </div>
@@ -955,7 +911,13 @@
       <div class="modal-header">
         <span class="pill-badge"><i class="fa-regular fa-calendar-check"></i> Online Scheduling</span>
         <h3 id="modalTitle">Book Consultation with Dr. Vinod Khanna</h3>
-        <p>AuroDerma — Skin Body &amp; Mind, Delhi</p>
+        <p>AuroDerma — Skin Body &amp; Mind, Vasant Kunj, Delhi</p>
+      </div>
+
+      <!-- Direct Call Line inside Modal -->
+      <div class="booking-direct-call-box">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>Direct Clinic Line: <a href="tel:+919999212800">Call <strong>+91 99992 12800</strong></a></span>
       </div>
       
       <form id="modalBookingForm" class="appointment-form">

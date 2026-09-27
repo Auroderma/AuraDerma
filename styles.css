@@ -1701,63 +1701,7 @@ button {
   }
 }
 
-/* ==========================================================================
-   Reviews Section
-   ========================================================================== */
-.reviews-section {
-  background-color: var(--bg-secondary);
-}
 
-.reviews-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
-
-@media (min-width: 768px) {
-  .reviews-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-}
-
-.review-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: var(--shadow-sm);
-}
-
-.review-stars {
-  color: #F59E0B;
-  display: flex;
-  gap: 3px;
-  margin-bottom: 12px;
-  font-size: 0.85rem;
-}
-
-.review-text {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  font-style: italic;
-  margin-bottom: 18px;
-  flex-grow: 1;
-}
-
-.reviewer strong {
-  font-size: 0.9rem;
-  color: var(--text-primary);
-  display: block;
-}
-
-.reviewer span {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
 
 /* ==========================================================================
    FAQ Section
@@ -2122,27 +2066,57 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 14px;
-  font-size: 0.88rem;
+  padding: 13px 18px;
+  font-size: 0.92rem;
   font-weight: 700;
   border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
 }
 
-.m-bar-call {
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
-  border: 1px solid var(--border-medium);
-}
-
-.m-bar-book {
-  background: linear-gradient(135deg, var(--accent-emerald), #225C4B);
+.m-bar-book-full {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent-emerald), #1E4F41);
   color: #FFFFFF;
-  box-shadow: 0 3px 10px rgba(27, 77, 62, 0.3);
+  box-shadow: 0 4px 14px rgba(27, 77, 62, 0.35);
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
 }
 
-[data-theme="dark"] .m-bar-book {
+[data-theme="dark"] .m-bar-book-full {
   background: linear-gradient(135deg, var(--accent-gold), #B59032);
   color: #0E1412;
+}
+
+.booking-direct-call-box {
+  background-color: var(--accent-gold-soft);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.booking-direct-call-box i {
+  color: var(--accent-gold);
+  font-size: 1rem;
+}
+
+.booking-direct-call-box a {
+  color: var(--accent-emerald);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+[data-theme="dark"] .booking-direct-call-box a {
+  color: var(--accent-gold);
 }
 
 /* ==========================================================================
